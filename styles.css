@@ -47,6 +47,7 @@ body {
 
 .section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -60,7 +61,6 @@ header {
     background-size: cover;
     background-position: center;
     padding: 1.5rem;
-    position: relative;
 }
 
 .heading {
@@ -72,7 +72,7 @@ header {
 
 .heading__logo {
     width: 350px;
-    margin: 80px 0;
+    margin: 110px 0 80px;
 }
 
 .heading__paragraph {
@@ -80,7 +80,21 @@ header {
     font-weight: 500;
     line-height: 150%;
     text-align: justify;  
-    color: var(--color-secondary);  
+    color: var(--color-secondary);
+    padding-bottom: 30px;  
+}
+
+.heading__fundacion span {
+    color: var(--color-primary);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.heading__fundacion p {
+    color: var(--color-secondary);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .rdBg {
@@ -100,9 +114,12 @@ header {
     padding: 6rem;
 }
 
+.tesoros-escondidos {
+    justify-content: start;
+}
+
 .tesoros-escondidos div {
     max-width: 610px;
-    align-self: start;
 }
 
 .tesoros-escondidos img {
@@ -144,46 +161,50 @@ header {
     text-transform: uppercase;
 }
 
-.footer {
-    padding: 1.5rem;
+.red-social {
+    padding: 3.5rem;
+    justify-content: start;
 }
 
-.footer__logo {
-    width: 370px;
-}
-
-.footer ul {
-    list-style: none;
-    border: dotted var(--color-secondary, 50%);
-    border-width: 2px 0;
-    padding: 1.5rem;
-    text-transform: uppercase;
-    margin: 50px 0;
-    font-weight: 500;
-}
-
-.footer li {
-    font-size: 21px;
-    color: var(--color-secondary);
-    line-height: 1.9;
-}
-
-.footer__fundacion span {
+.red-social div span {
+    font-size: 80px;
+    font-weight: 800;
     color: var(--color-primary);
-    font-size: 30px;
-    font-weight: 600;
 }
 
-.footer__fundacion p {
-    color: var(--color-secondary);
-    font-size: 25px;
+.red-social p {
+    font-size: 58px;
     font-weight: 600;
-    line-height: 1.4;
+    color: var(--color-secondary);
+    margin-top: -20px;
+}
+
+.red-social ul {
+    color: var(--color-secondary);
+    display: flex;
+    list-style: none;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.red-social img {
+    display: block;
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+.red-social li {
+    margin: 0 1rem;
 }
 
 .proximamente {
+    color: var(--white);
     font-size: 50px;
     font-weight: 600;
+    background-image: url(img/proximamente-fondo.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -203,6 +224,21 @@ header {
         padding: 1.5rem;
     }
 
+    .heading__fundacion {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem 1.5rem;
+    }
+
+    .heading__fundacion span {
+        font-size: 21px;
+    }
+
+    .heading__fundacion p {
+        font-size: 21px;
+    }
+
     .presentacion {
         font-size: 30px;
     }
@@ -210,6 +246,33 @@ header {
     .tesoros-escondidos p {
         font-size: 21px;
         margin-top: 10px;
+    }
+
+    .red-social div span {
+        font-size: 50px;
+    }
+
+    .red-social div p {
+        font-size: 30px;
+        margin-top: -10px;
+    }
+
+    .red-social ul {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .red-social img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .proximamente {
+        font-size: 40px;
     }
 
     .lanzamiento p {
@@ -226,21 +289,5 @@ header {
         font-size: 54px;
         margin-left: 4px;
         line-height: 100%;
-    }
-
-    .footer__logo {
-        width: 250px;
-    }
-
-    .footer li {
-        font-size: 18px;
-    }
-
-    .footer__fundacion span {
-        font-size: 24px;
-    }
-
-    .footer__fundacion p {
-        font-size: 24px;
     }
 }
