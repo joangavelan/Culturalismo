@@ -1,0 +1,246 @@
+:root {
+    --color-primary: #ff0040;
+    --color-secondary: #af7d73;
+    --white: #fff;
+    --font-primary: 'Neue Haas';
+}
+
+@font-face {
+    src: url(fonts/NeueHaasDisplay-Light.ttf);
+    font-family: 'Neue Haas';
+    font-weight: normal;
+}
+
+@font-face {
+    src: url(fonts/NeueHaasDisplay-Roman.ttf);
+    font-family: 'Neue Haas';
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(fonts/NeueHaasDisplay-Mediu.ttf);
+    font-family: 'Neue Haas';
+    font-weight: 600;
+}
+
+@font-face {
+    src: url(fonts/NeueHaasDisplay-Black.ttf);
+    font-family: 'Neue Haas';
+    font-weight: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+header {
+    background-image: url(img/portada-textura.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 891px;
+}
+
+.heading__logo {
+    width: 350px;
+    margin: 80px 0;
+}
+
+.heading__paragraph {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: justify;  
+    color: var(--color-secondary);  
+}
+
+.rdBg {
+    background-color: var(--color-primary);
+    color: var(--white);
+}
+
+.presentacion p {
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.tesoros-escondidos {
+    background-image: url(img/tesoros-escondidos-fondo.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    padding: 5rem;
+}
+
+.tesoros-escondidos div {
+    max-width: 610px;
+    align-self: start;
+}
+
+.tesoros-escondidos img {
+    display: block;
+    width: 100%;
+}
+
+.tesoros-escondidos p {
+    font-size: 23px;
+    color: var(--white);
+}
+
+.lanzamiento {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    padding: 1.5rem;
+}
+
+.lanzamiento p {
+    font-size: 50px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lanzamiento h2 {
+    margin-top: 50px;
+    line-height: 115%;
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.lanzamiento span {
+    font-size: 92px;
+    margin-left: 3px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.footer {
+    padding: 1.5rem;
+}
+
+.footer__logo {
+    width: 370px;
+}
+
+.footer ul {
+    list-style: none;
+    border: dotted var(--color-secondary, 50%);
+    border-width: 2px 0;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    margin: 50px 0;
+    font-weight: 500;
+}
+
+.footer li {
+    font-size: 21px;
+    color: var(--color-secondary);
+    line-height: 1.9;
+}
+
+.footer__fundacion span {
+    color: var(--color-primary);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer__fundacion p {
+    color: var(--color-secondary);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.proximamente {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 48em) {
+    .heading {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .heading__logo {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+    .heading__paragraph {
+        font-size: 15px;
+        padding: 1.5rem;
+    }
+
+    .presentacion {
+        font-size: 30px;
+    }
+
+    .tesoros-escondidos p {
+        font-size: 21px;
+        margin-top: 10px;
+    }
+
+    .lanzamiento p {
+        font-size: 30px;
+    }
+
+    .lanzamiento h2 {
+        font-size: 26px;
+        line-height: 130%;
+        margin-top: 25px;
+    }
+
+    .lanzamiento span {
+        font-size: 54px;
+        margin-left: 4px;
+        line-height: 100%;
+    }
+
+    .footer__logo {
+        width: 250px;
+    }
+
+    .footer li {
+        font-size: 18px;
+    }
+
+    .footer__fundacion span {
+        font-size: 24px;
+    }
+
+    .footer__fundacion p {
+        font-size: 24px;
+    }
+}
