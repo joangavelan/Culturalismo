@@ -73,17 +73,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 900px;
+    max-width: 935px;
 }
 
 .heading__logo {
     width: 350px;
-    margin: 110px 0 80px;
+    margin: 200px 0 80px;
 }
 
 .heading__paragraph {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 150%;
     text-align: justify;  
     color: var(--color-secondary);
@@ -92,7 +92,7 @@ header {
 
 .heading__fundacion span {
     color: var(--color-secondary);
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -169,8 +169,12 @@ header {
 }
 
 .red-social {
-    padding: 3rem;
+    padding: 1.5rem;
     justify-content: start;
+}
+
+.red-social div {
+    margin-top: 50px;
 }
 
 .red-social div span {
@@ -199,7 +203,7 @@ header {
 .red-social img {
     display: block;
     max-width: 1000px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .red-social li {
@@ -209,7 +213,7 @@ header {
 .proximamente {
     color: var(--white);
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 500;
     background-image: url(img/proximamente-fondo.jpg);
     background-position: center;
     background-size: cover;
