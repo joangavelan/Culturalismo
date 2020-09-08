@@ -92,14 +92,14 @@ header {
 
 .heading__fundacion span {
     color: var(--color-secondary);
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .heading__fundacion p {
     color: var(--color-primary);
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     line-height: 1.4;
 }
@@ -169,21 +169,21 @@ header {
 }
 
 .red-social {
-    padding: 3.5rem;
+    padding: 3rem;
     justify-content: start;
 }
 
 .red-social div span {
-    font-size: 80px;
-    font-weight: 700;
+    font-size: 70px;
+    font-weight: 600;
     color: var(--color-primary);
 }
 
 .red-social p {
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 600;
     color: rgba(175, 125, 115, .5);
-    margin-top: -20px;
+    margin-top: -8px;
     text-transform: capitalize;
 }
 
@@ -208,7 +208,7 @@ header {
 
 .proximamente {
     color: var(--white);
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
     background-image: url(img/proximamente-fondo.jpg);
     background-position: center;
