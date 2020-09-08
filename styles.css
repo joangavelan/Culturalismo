@@ -24,6 +24,12 @@
 }
 
 @font-face {
+    src: url(fonts/NeueHaasDisplay-Bold.ttf);
+    font-family: 'Neue Haas';
+    font-weight: 700;
+}
+
+@font-face {
     src: url(fonts/NeueHaasDisplay-Black.ttf);
     font-family: 'Neue Haas';
     font-weight: 800;
@@ -67,7 +73,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 891px;
+    max-width: 900px;
 }
 
 .heading__logo {
@@ -81,17 +87,18 @@ header {
     line-height: 150%;
     text-align: justify;  
     color: var(--color-secondary);
-    padding-bottom: 30px;  
+    margin-bottom: 50px;  
 }
 
 .heading__fundacion span {
-    color: var(--color-primary);
-    font-size: 30px;
+    color: var(--color-secondary);
+    font-size: 27px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .heading__fundacion p {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     font-size: 25px;
     font-weight: 600;
     line-height: 1.4;
@@ -111,7 +118,7 @@ header {
     background-image: url(img/tesoros-escondidos-fondo.jpg);
     background-size: cover;
     background-position: 50% 80%;
-    padding: 6rem;
+    padding: 7rem;
 }
 
 .tesoros-escondidos {
@@ -168,15 +175,16 @@ header {
 
 .red-social div span {
     font-size: 80px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--color-primary);
 }
 
 .red-social p {
-    font-size: 58px;
+    font-size: 56px;
     font-weight: 600;
-    color: var(--color-secondary);
+    color: rgba(175, 125, 115, .5);
     margin-top: -20px;
+    text-transform: capitalize;
 }
 
 .red-social ul {
@@ -195,7 +203,7 @@ header {
 }
 
 .red-social li {
-    margin: 0 1rem;
+    margin: 0 10px;
 }
 
 .proximamente {
